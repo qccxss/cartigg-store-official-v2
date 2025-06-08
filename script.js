@@ -51,18 +51,23 @@ categories.forEach(cat => {
       ? `${p.price.toLocaleString()} 🪙 OwO Coin`
       : "🚧 Soon 🚧";
 
-    const buyButton = p.price
-      ? `<button class="btn" onclick="buy('${p.name}', ${p.price})">Purchase</button>`
-      : "";
-
     const card = document.createElement("div");
     card.className = "card";
+
     card.innerHTML = `
       <h3>${p.name}</h3>
       <p><strong>Price:</strong> ${priceText}</p>
       <p class="description">${p.description || ""}</p>
-      ${buyButton}
     `;
+
+    if (p.price) {
+      const btn = document.createElement("button");
+      btn.className = "btn";
+      btn.textContent = "Purchase";
+      btn.addEventListener("click", () => buy(p.name, p.price));
+      card.appendChild(btn);
+    }
+
     grid.appendChild(card);
   });
 
@@ -73,9 +78,6 @@ categories.forEach(cat => {
 function buy(name, price) {
   alert(`💸 To buy this product, send this command to the OwO bot:\n\nowo give @qccxs ${price} cowoncy\n\n🎁 Product: ${name}`);
 }
-
-
-
 
 const eventDate = new Date("2025-06-30T20:00:00").getTime();
 
@@ -105,8 +107,6 @@ function updateViewers() {
   const viewers = Math.floor(Math.random() * 5000) + 50;
   document.getElementById('viewers').textContent = viewers;
 }
-
-//
 
 updateViewers();
 setInterval(updateViewers, 5000);
