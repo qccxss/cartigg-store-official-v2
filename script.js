@@ -1,4 +1,4 @@
-const USD_RATE = 100000; // Bu satırı artık kullanmıyoruz ama silmek opsiyonel
+const USD_RATE = 100000; 
 
 const categories = [
   {
@@ -73,3 +73,83 @@ categories.forEach(cat => {
 function buy(name, price) {
   alert(`💸 To buy this product, send this command to the OwO bot:\n\nowo give @qccxs ${price} cowoncy\n\n🎁 Product: ${name}`);
 }
+
+
+
+
+const eventDate = new Date("2025-06-30T20:00:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const diff = eventDate - now;
+
+  if (diff <= 0) {
+    document.getElementById("time").textContent = "The Giveaway Has Started!";
+    clearInterval(timerInterval);
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("time").textContent =
+    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+updateCountdown();
+const timerInterval = setInterval(updateCountdown, 1000);
+
+function updateViewers() {
+  const viewers = Math.floor(Math.random() * 5000) + 50;
+  document.getElementById('viewers').textContent = viewers;
+}
+
+
+updateViewers();
+setInterval(updateViewers, 5000);
+
+particlesJS('particles-js', {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#b388ff" },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 0.7,
+      "random": false
+    },
+    "size": {
+      "value": 2,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "onclick": { "enable": true, "mode": "push" }
+    },
+    "modes": {
+      "grab": { "distance": 150, "line_linked": { "opacity": 0.4 } },
+      "push": { "particles_nb": 4 }
+    }
+  },
+  "retina_detect": true
+});
