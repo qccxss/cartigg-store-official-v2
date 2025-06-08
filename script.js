@@ -106,6 +106,7 @@ function updateViewers() {
   document.getElementById('viewers').textContent = viewers;
 }
 
+//
 
 updateViewers();
 setInterval(updateViewers, 5000);
