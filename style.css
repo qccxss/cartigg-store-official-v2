@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #1a0029 0%, #0a0a3f 50%, #000000 100%);
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #cfa9ff;
+  text-shadow: 0 0 10px #9f7fff;
+  margin-bottom: 40px;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.category h2 {
+  font-size: 2rem;
+  color: #ffd6ff;
+  margin-bottom: 20px;
+  border-left: 6px solid #b388ff;
+  padding-left: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #3f3f7f;
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #b388ff;
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: #ccc;
+  margin: 4px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #b388ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #d5aaff;
+}
