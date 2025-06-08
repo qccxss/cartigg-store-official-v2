@@ -71,5 +71,5 @@ categories.forEach(cat => {
 });
 
 function buy(name, price) {
-  alert(`💸 To buy this product, send this command to the OwO bot:\n\nowo give @qcc ${price} cowoncy\n\n🎁 Product: ${name}`);
+  alert(`💸 To buy this product, send this command to the OwO bot:\n\nowo give @qccxs ${price} cowoncy\n\n🎁 Product: ${name}`);
 }
