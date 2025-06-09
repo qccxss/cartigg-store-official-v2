@@ -5,19 +5,35 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "🛒・Carti.gg - Store",
       products: [
-        { name: "💵・Lifetime Premium", price: 1500000, description: "If You Buy This You Will Get Access To All Premium Categories & Channels For Lifetime. " },
-        { name: "💵・Lifetime Booster", price: 1000000, description: "If You Buy This You Will Get Access To All Booster Categories & Channels For Lifetime. " },
-        { name: "💵・Lifetime Partner", price: 6000000, description: "If You Buy This You Will Get Lifetime-Partner ADS & Role " },
-        { name: "💵・Server Ads", price: 4000000, description: "If You Buy This You Will Get ADS & Role" }
+        { name: "💵・Lifetime Premium", price: 1500000, description: "If You Buy This You Will Get Access To All Premium Categories & Channels For Lifetime." },
+        { name: "💵・Lifetime Booster", price: 1000000, description: "If You Buy This You Will Get Access To All Booster Categories & Channels For Lifetime." },
+        { name: "💵・Lifetime Partner", price: 6000000, description: "If You Buy This You Will Get Lifetime-Partner ADS & Role." },
+        { name: "💵・Server Ads", price: 4000000, description: "If You Buy This You Will Get ADS & Role." }
       ]
     },
     {
       name: "🛒・Fivem - Store",
       products: [
-        { name: "💵・Special Uniform", price: null, description: "Soon" },
-        { name: "💵・Special Tweak", price: null, description: "Soon" },
-        { name: "💵・Special Strafe", price: null, description: "Soon" },
-        { name: "💵・Private Pack", price: null, description: "Soon" }
+        {
+          name: "💵・Special Uniform",
+          price: 700000,
+          description: "If You Buy This We Will Make You A Special Uniform."
+        },
+        {
+          name: "💵・Special Tweak",
+          price: 800000,
+          description: "If You Buy This, You Will Be Provided With Appropriate Game Settings and FPS Boosts Specific to Your Device."
+        },
+        {
+          name: "💵・Special Strafe",
+          price: 1100000,
+          description: "It Will Boost Your Strafe And Allow You To Throw TP Around."
+        },
+        {
+          name: "💵・Private Pack",
+          price: 2000000,
+          description: "If You Buy This, A Special Skybox, Skin Pack, Citizen, Etc. Will Be Made For You And Delivered In A Short Time."
+        }
       ]
     },
     {
@@ -54,6 +70,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const card = document.createElement("div");
       card.className = "card";
+
+
+      const newProducts = [
+        "💵・Special Uniform",
+        "💵・Special Tweak",
+        "💵・Special Strafe",
+        "💵・Private Pack"
+      ];
+      if (newProducts.includes(p.name)) {
+        card.classList.add("new");
+      }
 
       card.innerHTML = `
         <h3>${p.name}</h3>
@@ -153,6 +180,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "push": { "particles_nb": 4 }
       }
     },
-    "retina_detect": true
+    "retina_detect": true 
   });
 });
