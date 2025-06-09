@@ -50,6 +50,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
+  const productTags = {
+    "💵・Special Uniform": ["new"],
+    "💵・Special Tweak": ["new"],
+    "💵・Special Strafe": ["new"],
+    "💵・Private Pack": ["limited"],
+    "💵・Lifetime Premium": ["hot"],
+    "💵・Lifetime Booster": ["hot"],
+    "💵・Lifetime Partner": ["new"],
+    "💵・Server Ads": ["new"]
+  };
+
+  // SOON etiketlerini otomatik ekleme
+  categories.forEach(cat => {
+    cat.products.forEach(p => {
+      if (p.name.includes("Soon")) {
+        if (!productTags[p.name]) productTags[p.name] = [];
+        if (!productTags[p.name].includes("soon")) {
+          productTags[p.name].push("soon");
+        }
+      }
+    });
+  });
+
   const store = document.getElementById("store");
 
   categories.forEach(cat => {
@@ -71,18 +94,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("div");
       card.className = "card";
 
+      const tags = productTags[p.name] || [];
+      tags.forEach(tag => {
+        card.classList.add(tag);
 
-      const newProducts = [
-        "💵・Special Uniform",
-        "💵・Special Tweak",
-        "💵・Special Strafe",
-        "💵・Private Pack"
-      ];
-      if (newProducts.includes(p.name)) {
-        card.classList.add("new");
-      }
+        const tagLabel = document.createElement("span");
+        tagLabel.classList.add("tag-label");
+        tagLabel.textContent = tag.toUpperCase();
+        card.appendChild(tagLabel);
+      });
 
-      card.innerHTML = `
+      card.innerHTML += `
         <h3>${p.name}</h3>
         <p><strong>Price:</strong> ${priceText}</p>
         <p class="description">${p.description || ""}</p>
@@ -132,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const timerInterval = setInterval(updateCountdown, 1000);
 
   function updateViewers() {
-    const viewers = Math.floor(Math.random() * 5000) + 50;
+    const viewers = Math.floor(Math.random() * 34532) + 50;
     document.getElementById('viewers').textContent = viewers;
   }
 
