@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login - Carti.gg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      background-color: #0f0f2b;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+
+    .login-box {
+      background: #1a1a3d;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    input {
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #26a69a;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #2bbbad;
+    }
+
+    .error {
+      margin-top: 10px;
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>🔐 Admin Login</h2>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
+    <button onclick="login()">Login</button>
+    <div class="error" id="error"></div>
+  </div>
+
+  <script>
+    function login() {
+      const password = document.getElementById("adminPassword").value;
+      const correctPassword = "cartigg123"; 
+
+      if (password === correctPassword) {
+        localStorage.setItem("isAdmin", "true");
+        window.location.href = "admin.html";
+      } else {
+        document.getElementById("error").textContent = "Incorrect password!";
+      }
+    }
+
+
+    if (localStorage.getItem("isAdmin") === "true") {
+      window.location.href = "admin.html";
+    }
+  </script>
+</body>
+</html>

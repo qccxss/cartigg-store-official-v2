@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a23;
+  color: #fff;
+}
+
+.admin-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #161642;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f0f0f0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #26a69a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2bbbad;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#productList li {
+  background: #1e1e3f;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: crimson;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}

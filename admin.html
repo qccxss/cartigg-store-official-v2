@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Carti.gg</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>🛠️ Carti.gg Admin Panel</h1>
+    <section class="product-list">
+      <h2>📦 Soon</h2>
+      <ul id="productList"></ul>
+    </section>
+  </div>
+<script>
+  if (localStorage.getItem("isAdmin") !== "true") {
+    window.location.href = "admin-login.html";
+  }
+</script>
+  <script src="admin.js"></script>
+</body>
+</html>

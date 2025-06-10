@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "💵・Server Ads": ["new"]
   };
 
-  // SOON etiketlerini otomatik ekleme
+
   categories.forEach(cat => {
     cat.products.forEach(p => {
       if (p.name.includes("Soon")) {
