@@ -47,9 +47,26 @@ document.addEventListener("DOMContentLoaded", () => {
       products: [
         { name: "🚧 Soon 🚧", price: null, description: "Soon" }
       ]
+    },
+    {
+      name: "🛒・Forza Horizon 5 - Store",
+      products: [
+        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+      ]
+    },
+        {
+      name: "🛒・Forza Horizon 4 - Store",
+      products: [
+        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+      ]
+    },
+    {
+      name: "🛒・GTA 5 - Store",
+      products: [
+        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+      ]
     }
   ];
-
   const productTags = {
     "💵・Special Uniform": ["new"],
     "💵・Special Tweak": ["new"],
