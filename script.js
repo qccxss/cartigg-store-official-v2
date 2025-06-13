@@ -1,3 +1,53 @@
+    async function updateDiscordOnlineCount() {
+  const guildId = '1371013047371436062'; 
+  const widgetUrl = `https://discord.com/api/guilds/${guildId}/widget.json`;
+
+  try {
+    const response = await fetch(widgetUrl);
+    const data = await response.json();
+    const onlineCount = data.presence_count;
+    document.getElementById('online-count').innerText = onlineCount;
+  } catch (error) {
+    document.getElementById('online-count').innerText = "Unavailable";
+  }
+}
+
+
+updateDiscordOnlineCount();
+setInterval(updateDiscordOnlineCount, 30000);
+
+//
+
+window.addEventListener('DOMContentLoaded', () => {
+  const music = document.getElementById('lofi-music');
+  const toggle = document.getElementById('music-toggle');
+
+
+  music.volume = 0;
+  music.play().then(() => {
+    setTimeout(() => {
+      music.volume = 0.3;
+      music.muted = false;
+    }, 100);
+  }).catch(() => {
+
+    toggle.textContent = '🎵 Play Music';
+  });
+
+  toggle.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      toggle.textContent = '🔇 Stop Music';
+    } else {
+      music.pause();
+      toggle.textContent = '🎵 Play Music';
+    }
+  });
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const USD_RATE = 100000;
 

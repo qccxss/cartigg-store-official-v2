@@ -23,7 +23,6 @@
     🔒 Admin Panel
   </a>
 </div>
-
   <div class="container" style="position: relative; z-index: 1;">
     <h1 class="title">🌌 ! Carti.gg | Store 🌌</h1>
     <div id="countdown" style="font-size: 1.5rem; text-align: center; color: #b388ff; margin-bottom: 30px;">
@@ -32,9 +31,17 @@
     <div id="viewer-count" style="font-size: 1.5rem; text-align: center; color: #b388ff; margin-bottom: 30px;">
       Current Viewers  |  <span id="viewers">0</span>
     </div>
+    <div id="discord-online" class="discord-status">
+  Discord Online: <span id="online-count">Loading...</span>
+</div>
+<div class="music-control bottom-left">
+  <button id="music-toggle">🔇 Stop Music</button>
+  <audio id="lofi-music" autoplay loop muted>
+    <source src="music/lofi.mp3" type="audio/mpeg">
+  </audio>
+</div>
     <div id="store"></div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>

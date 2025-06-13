@@ -236,3 +236,57 @@ body {
   z-index: 1;
   pointer-events: none;
 }
+.discord-status {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #5865F2;
+  box-shadow: 0 0 10px #5865F2;
+}
+
+.product-card.glow {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card.glow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,255,255,0.4) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-card.glow:hover::after {
+  opacity: 1;
+}
+
+.music-control.bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #35004c;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+  z-index: 999;
+}
+
+#music-toggle {
+  background: transparent;
+  color: #ad82b7;
+  border: 2px solid #ad82b7;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
