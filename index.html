@@ -36,10 +36,32 @@
 </div>
 <div class="music-control bottom-left">
   <button id="music-toggle">🔇 Stop Music</button>
-  <audio id="lofi-music" autoplay loop muted>
+  <audio id="lofi-music" loop>
     <source src="music/lofi.mp3" type="audio/mpeg">
   </audio>
 </div>
+
+<script>
+  const music = document.getElementById('lofi-music');
+  const btn = document.getElementById('music-toggle');
+
+  btn.textContent = '🔇 Stop Music';
+
+
+  window.addEventListener('click', () => {
+    music.play().catch(() => {});
+  }, { once: true });
+
+  btn.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '🔇 Stop Music';
+    } else {
+      music.pause();
+      btn.textContent = '🎵 Play Music';
+    }
+  });
+</script>
     <div id="store"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

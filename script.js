@@ -1,6 +1,6 @@
     async function updateDiscordOnlineCount() {
   const guildId = '1371013047371436062'; 
-  const widgetUrl = `https://discord.com/api/guilds/${guildId}/widget.json`;
+  const widgetUrl = `https://discord.com/api/guilds/${1371013047371436062}/widget.json`;
 
   try {
     const response = await fetch(widgetUrl);
@@ -8,7 +8,7 @@
     const onlineCount = data.presence_count;
     document.getElementById('online-count').innerText = onlineCount;
   } catch (error) {
-    document.getElementById('online-count').innerText = "Unavailable";
+    document.getElementById('online-count').innerText = "Soon";
   }
 }
 
@@ -46,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//
 
 
 document.addEventListener("DOMContentLoaded", () => {
