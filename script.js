@@ -112,7 +112,19 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      name: "🛒・GTA 5 - Store",
+      name: "🛒・GTA 5 Legacy - Store",
+      products: [
+        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+      ]
+    },
+        {
+      name: "🛒・GTA 5 Enhanced - Store",
+      products: [
+        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+      ]
+    },
+    {
+      name: "🛒・Sea Of Thives - Store",
       products: [
         { name: "🚧 Soon 🚧", price: null, description: "Soon" }
       ]
