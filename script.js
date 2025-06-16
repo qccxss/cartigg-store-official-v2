@@ -193,6 +193,32 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ]
         },
+            {
+      name: "🛒・Valorant - Store",
+      products: [
+        {
+          name: "💵・Paid Cheat",
+          price: 30000000,
+          description: "If You Buy This You Get Special Paid Cheat For Valorant."
+        },
+        {
+          name: "💵・Paid Injector",
+          price: 35000000,
+          description: "If You Buy This You Get Paid Injector For Valorant."
+        },
+        {
+          name: "💵・Paid Spoofer",
+          price: 35000000,
+          description: "If You Buy This You Get Paid Spoofer For Valorant."
+        }
+      ]
+        },
+        {
+      name: "🛒・Spoofer - Store",
+      products: [
+        { name: "💵・Paid Spoofer", price: null, description: "Soon" }
+      ]
+    },
   ];
   const productTags = {
     "💵・Private Pack": ["limited"],
@@ -202,6 +228,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "💵・Special Skin": ["new"],
     "💵・Paid Cheat": ["new"],
     "💵・Paid Skin Pack": ["limited"],
+    "💵・Paid Injector": ["new"],
+    "💵・Paid Spoofer": ["new"],
   };
 
 
