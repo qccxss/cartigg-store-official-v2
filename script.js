@@ -137,9 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "🛒・CS 1.6 - Store",
       products: [
         {
-          name: "💵・Paid Menu",
+          name: "💵・Paid Cheat",
           price: 10000000,
-          description: "If You Buy This You Get Special Paid Menu For CS 1.6"
+          description: "If You Buy This You Get Special Paid Cheat For CS 1.6"
         },
         {
           name: "💵・Special Skin",
@@ -157,9 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "🛒・CS 2 - Store",
       products: [
         {
-          name: "💵・Paid Menu",
+          name: "💵・Paid Cheat",
           price: 25000000,
-          description: "If You Buy This You Get Special Paid Menu For CS 2"
+          description: "If You Buy This You Get Special Paid Cheat For CS 2"
         }
       ]
     },
