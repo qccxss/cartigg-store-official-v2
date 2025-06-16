@@ -153,6 +153,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       ]
     },
+    {
+      name: "🛒・CS 2 - Store",
+      products: [
+        {
+          name: "💵・Paid Menu",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Menu For CS 2"
+        }
+      ]
+    },
         {
       name: "🛒・Genshin Impact - Store",
       products: [
@@ -160,6 +170,26 @@ document.addEventListener("DOMContentLoaded", () => {
           name: "💵・Paid Cheat",
           price: 25000000,
           description: "If You Buy This You Get Special Paid Menu For Genshin Impact."
+        },
+      ]
+        },
+                {
+      name: "🛒・Farlight 84 - Store",
+      products: [
+                {
+          name: "💵・Paid Cheat",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Menu For Farlight 84."
+        },
+             ]
+                },
+                {
+      name: "🛒・Left 4 Dead 2 - Store",
+      products: [
+                {
+          name: "💵・Paid Cheat",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Menu For Left 4 Dead 2."
         },
       ]
         },
