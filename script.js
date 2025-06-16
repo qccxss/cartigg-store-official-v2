@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
           name: "💵・Private Pack",
-          price: 2000000,
+          price: 15000000,
           description: "If You Buy This, A Special Skybox, Skin Pack, Citizen, Etc. Will Be Made For You And Delivered In A Short Time."
         }
       ]
@@ -126,19 +126,52 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "🛒・Sea Of Thives - Store",
       products: [
-        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+                {
+          name: "💵・Paid Cheat",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Menu For Sea Of Thives."
+        },
       ]
-    }
+        },
+    {
+      name: "🛒・CS 1.6 - Store",
+      products: [
+        {
+          name: "💵・Paid Menu",
+          price: 10000000,
+          description: "If You Buy This You Get Special Paid Menu For CS 1.6"
+        },
+        {
+          name: "💵・Special Skin",
+          price: 9500000,
+          description: "If You Buy This, We Give You A Paid Skin You Want."
+        },
+        {
+          name: "💵・Paid Skin Pack",
+          price: 20000000,
+          description: "If You Buy This You Get Special Paid Skin Pack For CS 1.6"
+        }
+      ]
+    },
+        {
+      name: "🛒・Genshin Impact - Store",
+      products: [
+                {
+          name: "💵・Paid Cheat",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Menu For Genshin Impact."
+        },
+      ]
+        },
   ];
   const productTags = {
-    "💵・Special Uniform": ["new"],
-    "💵・Special Tweak": ["new"],
-    "💵・Special Strafe": ["new"],
     "💵・Private Pack": ["limited"],
     "💵・Lifetime Premium": ["hot"],
     "💵・Lifetime Booster": ["hot"],
-    "💵・Lifetime Partner": ["new"],
-    "💵・Server Ads": ["new"]
+    "💵・Paid Menu": ["new"],
+    "💵・Special Skin": ["new"],
+    "💵・Paid Cheat": ["new"],
+    "💵・Paid Skin Pack": ["limited"],
   };
 
 
