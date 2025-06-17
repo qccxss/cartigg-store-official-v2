@@ -96,7 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "🛒・Minecraft - Store",
       products: [
-        { name: "🚧 Soon 🚧", price: null, description: "Soon" }
+                        {
+          name: "💵・Paid Cheat",
+          price: 35000000,
+          description: "If You Buy This You Get Special Paid Cheat For Minecraft."
+        },
       ]
     },
     {
@@ -129,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
           name: "💵・Paid Cheat",
           price: 25000000,
-          description: "If You Buy This You Get Special Paid Menu For Sea Of Thives."
+          description: "If You Buy This You Get Special Paid Cheat For Sea Of Thives."
         },
       ]
         },
@@ -138,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
       products: [
         {
           name: "💵・Paid Cheat",
-          price: 10000000,
+          price: 15000000,
           description: "If You Buy This You Get Special Paid Cheat For CS 1.6"
         },
         {
@@ -151,6 +155,16 @@ document.addEventListener("DOMContentLoaded", () => {
           price: 20000000,
           description: "If You Buy This You Get Special Paid Skin Pack For CS 1.6"
         }
+      ]
+          },
+        {
+      name: "🛒・Counter Strike: Source  - Store",
+      products: [
+        {
+          name: "💵・Paid Cheat",
+          price: 25000000,
+          description: "If You Buy This You Get Special Paid Cheat For CS: Source."
+          }
       ]
     },
     {
@@ -169,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
           name: "💵・Paid Cheat",
           price: 25000000,
-          description: "If You Buy This You Get Special Paid Menu For Genshin Impact."
+          description: "If You Buy This You Get Special Paid Cheat For Genshin Impact."
         },
       ]
         },
@@ -179,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
           name: "💵・Paid Cheat",
           price: 25000000,
-          description: "If You Buy This You Get Special Paid Menu For Farlight 84."
+          description: "If You Buy This You Get Special Paid Cheat For Farlight 84."
         },
              ]
                 },
@@ -189,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
           name: "💵・Paid Cheat",
           price: 25000000,
-          description: "If You Buy This You Get Special Paid Menu For Left 4 Dead 2."
+          description: "If You Buy This You Get Special Paid Cheat For Left 4 Dead 2."
         },
       ]
         },
@@ -212,11 +226,41 @@ document.addEventListener("DOMContentLoaded", () => {
           description: "If You Buy This You Get Paid Spoofer For Valorant."
         }
       ]
+          },
+        {
+      name: "🛒・Fortnite - Store",
+      products: [
+        {
+          name: "💵・Paid Cheat",
+          price: 40000000,
+          description: "If You Buy This You Get Special Paid Cheat For Fortnite."
         },
+        {
+          name: "💵・Paid Injector",
+          price: 35000000,
+          description: "If You Buy This You Get Paid Injector For Fortnite."
+        },
+        {
+          name: "💵・Paid Spoofer",
+          price: 35000000,
+          description: "If You Buy This You Get Paid Spoofer For Fortnite."
+        }
+      ]
+          },
+        {
+      name: "🛒・Team Fortress 2 - Store",
+      products: [
+        {
+          name: "💵・Paid Cheat",
+          price: 35000000,
+          description: "If You Buy This You Get Special Paid Cheat For Team Fortress 2."
+        },
+      ]
+    },
         {
       name: "🛒・Spoofer - Store",
       products: [
-        { name: "💵・Paid Spoofer", price: null, description: "Soon" }
+        { name: "💵・Paid Spoofer!", price: null, description: "Soon" }
       ]
     },
   ];
@@ -229,7 +273,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "💵・Paid Cheat": ["new"],
     "💵・Paid Skin Pack": ["limited"],
     "💵・Paid Injector": ["new"],
-    "💵・Paid Spoofer": ["soon"],
+    "💵・Paid Spoofer": ["new"],
+    "💵・Paid Spoofer!": ["soon"],
   };
 
 
