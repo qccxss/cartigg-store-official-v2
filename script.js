@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "💵・Paid Cheat": ["new"],
     "💵・Paid Skin Pack": ["limited"],
     "💵・Paid Injector": ["new"],
-    "💵・Paid Spoofer": ["new"],
+    "💵・Paid Spoofer": ["soon"],
   };
 
 
